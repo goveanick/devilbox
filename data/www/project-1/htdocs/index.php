@@ -7,7 +7,7 @@
 
             include "db_connect.php";
             include "retrieve_all.php";
-            echo "<h2>Show all Joke with the word - quit</h2>";
+            echo "<h2>Show all Jokes with the word - quit</h2>";
             include "search_jokes.php";
 
             $mysqli->close();

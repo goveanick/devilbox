@@ -1,8 +1,8 @@
 <?php
-    $host = "";
-    $user = "";
+    $host = "localhost:" . $_ENV["HOST_PORT_MYSQL"];
+    $user = $_ENV["MYSQL_USER"];
     $password = "";
-    $database = "";
+    $database = $_ENV["MYSQL_TABLE_NAME"];
 
     $mysqli = new mysqli($host, $user, $password, $database);
     if ($mysqli->connect_errno) {
